@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pc_software_cat_item">
+    <pc_software_cat_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <auto_created>true</auto_created>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category display_value="SFA IT: logiciel">cc4a015507b85010290ff6fd7c1ed0a4</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p><font size="3" color="#808080" face="arial,helvetica,sans-serif"><span class="pmgPSB" style="color: #000000; font-size: 13.333333969116211px;">Microsoft Project software</span><span style="color: #000000; font-size: 13.333333969116211px;"> gives you powerful new ways to effectively manage important projects.</span></font></p>
+<p><font size="2" color="#808080" face="arial,helvetica,sans-serif"><span style="color: #000000; font-size: 13.333333969116211px;"> Unlock easy collaboration capabilities to quickly start and deliver winning projects while leveraging the power of Microsoft Office products</span></font></p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <features/>
+        <flow_designer_flow/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon>f1a5bc2307701010290ff6fd7c1ed0da</icon>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Microsoft Project software</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>true</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture>93b5f46307701010290ff6fd7c1ed00a</picture>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=a255bc2307701010290ff6fd7c1ed0d4&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <product_id/>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>d7da24ab07301010290ff6fd7c1ed0ab</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <short_description>Copy of Manage projects, Organize tasks, Collaborate
+		</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <specs/>
+        <start_closed>false</start_closed>
+        <sys_class_name>pc_software_cat_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 14:48:32</sys_created_on>
+        <sys_id>a255bc2307701010290ff6fd7c1ed0d4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Microsoft Project software</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>pc_software_cat_item_a255bc2307701010290ff6fd7c1ed0d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-26 10:25:20</sys_updated_on>
+        <template/>
+        <type>item</type>
+        <upc/>
+        <use_sc_layout>false</use_sc_layout>
+        <vendor/>
+        <vendor_catalog_item/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow display_value="Demande collaborateur workflow">2c8292df07601010290ff6fd7c1ed053</workflow>
+    </pc_software_cat_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=a255bc2307701010290ff6fd7c1ed0d4"/>
+    <fx_price action="delete_multiple" query="id=a255bc2307701010290ff6fd7c1ed0d4"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="MAD">a1768e8c0a0a0b5400516a1495cdc6ee</currency>
+        <field>price</field>
+        <id>a255bc2307701010290ff6fd7c1ed0d4</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 14:48:32</sys_created_on>
+        <sys_id>6e55bc2307701010290ff6fd7c1ed0d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-21 14:48:32</sys_updated_on>
+        <table>pc_software_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="MAD">a1768e8c0a0a0b5400516a1495cdc6ee</currency>
+        <field>recurring_price</field>
+        <id>a255bc2307701010290ff6fd7c1ed0d4</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 14:48:32</sys_created_on>
+        <sys_id>a655bc2307701010290ff6fd7c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-21 14:48:32</sys_updated_on>
+        <table>pc_software_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#ffffff</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>icon</file_name>
+        <hash>ebdb6eda519d17ae43dec6ff679adb741f0304be6cfb6116fb9a2f15767b2382</hash>
+        <image_height>27</image_height>
+        <image_width>27</image_width>
+        <size_bytes>678</size_bytes>
+        <size_compressed>634</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 14:49:50</sys_created_on>
+        <sys_id>f1a5bc2307701010290ff6fd7c1ed0da</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-21 14:49:50</sys_updated_on>
+        <table_name>ZZ_YYpc_software_cat_item</table_name>
+        <table_sys_id>a255bc2307701010290ff6fd7c1ed0d4</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="f1a5bc2307701010290ff6fd7c1ed0da">f1a5bc2307701010290ff6fd7c1ed0da</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 14:49:50</sys_created_on>
+        <sys_id>35a5bc2307701010290ff6fd7c1ed0da</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLS0iDMwQwkd3GxpAMp5mInzxAODo7bD/0fALk3AnxCXP+DwZLlq5etWtc/dXZjew+QXVBak11cBSRLq5tauycC2UFRyV7BMUAUlZTl5B2SkVc2afocGzd/Y1t3oPZfv39/+/7946fP795/ePrsxYOHj+/cvXfrzt3rN+9cuXbj3IVLJ0+fO3T0xMEjx3ftObBj974t23dv3Lpj1bpNQEuB1s1btGzqrPlAA4EO6J08o7N/KtDS5s7+utbu6qaOivpWoDMgTgLaC3QAxDFAZ1i7+ls6+ZjaewKdYWDlomvupG3qoG5orahtbug+OxXoR4+SIL9gBkElY2Njl9DQtI6ZM2eu2n3mzN137979Jxl4JBQnAM3kLPCILGZgEP0LwoxnCwITgYIyJa4RJcH5aSXliUWpDI4p+UmpCm6ZRanl+UXZxQrOwaaFWx+bAdW99HRxDNGYePZibHiTgwBbgo/25U1XZDrWa1yZJGKv1CE2ISri33/7SbE27a1WMZUX79ill5XdE2ypj1x7+uPxbfUfxWN5DX8eS7F/8WfRbpMYqVVpuyxeXXsx7YbShiqe+lUVc/UkVxxkkzv0omfx55PpF1nCehz88yykE3sPcX8S1bzXUH1fj1fZK/9m+ASNboEzW8Kjnj1TOWbG8MmFWWTPs5zps1vSGfhqHW9WT7WrZK/7YqIuZrpPf766arGDZOXy5uV/bH6dD01qWLfJ1ebf/Bx79c/9J0O+aRdV1qWqhBc//GzyqtLs3sKPdb3l9rGyDPdL1YMVG7+UAj3N4Onq57LOKaEJAJ5ZDoymAgAA</data>
+        <length>832</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="f1a5bc2307701010290ff6fd7c1ed0da">f1a5bc2307701010290ff6fd7c1ed0da</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 14:49:50</sys_created_on>
+        <sys_id>b5a5bc2307701010290ff6fd7c1ed0da</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#317339</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>picture</file_name>
+        <hash>5df904816ab1b9af8e0a06b63cf54d13845933d377cd8540313732233551be06</hash>
+        <image_height>300</image_height>
+        <image_width>400</image_width>
+        <size_bytes>3518</size_bytes>
+        <size_compressed>3277</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 14:50:13</sys_created_on>
+        <sys_id>93b5f46307701010290ff6fd7c1ed00a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-21 14:50:13</sys_updated_on>
+        <table_name>ZZ_YYpc_software_cat_item</table_name>
+        <table_sys_id>a255bc2307701010290ff6fd7c1ed0d4</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="93b5f46307701010290ff6fd7c1ed00a">93b5f46307701010290ff6fd7c1ed00a</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 14:50:13</sys_created_on>
+        <sys_id>d3b5f46307701010290ff6fd7c1ed00a</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>4356</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="93b5f46307701010290ff6fd7c1ed00a">93b5f46307701010290ff6fd7c1ed00a</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 14:50:13</sys_created_on>
+        <sys_id>57b5f46307701010290ff6fd7c1ed00a</sys_id>
+    </sys_attachment_doc>
+</record_update>

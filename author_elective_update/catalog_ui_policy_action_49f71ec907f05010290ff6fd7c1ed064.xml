@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Demande collaborateur">7555310507b05010290ff6fd7c1ed02c</catalog_item>
+        <catalog_variable>IO:40d9fdc507b05010290ff6fd7c1ed0d1</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>150</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-14 03:35:07</sys_created_on>
+        <sys_id>49f71ec907f05010290ff6fd7c1ed064</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>SFA</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_49f71ec907f05010290ff6fd7c1ed064</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-14 03:35:57</sys_updated_on>
+        <table/>
+        <ui_policy display_value="cacher le champ description de l'article quand la question vous ne trouver pas votre article dans la liste.">a9231ec507f05010290ff6fd7c1ed042</ui_policy>
+        <variable>SFA</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>6cf84779db4f88180ae3ac44d49619f5</instance_id>
+        <instance_name>dev101366</instance_name>
+        <name>catalog_ui_policy_action_49f71ec907f05010290ff6fd7c1ed064</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Demande collaborateur">7555310507b05010290ff6fd7c1ed02c</catalog_item><catalog_variable>IO:40d9fdc507b05010290ff6fd7c1ed0d1</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>150</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-14 03:35:07</sys_created_on><sys_id>49f71ec907f05010290ff6fd7c1ed064</sys_id><sys_mod_count>1</sys_mod_count><sys_name>SFA</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>catalog_ui_policy_action_49f71ec907f05010290ff6fd7c1ed064</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-14 03:35:57</sys_updated_on><table/><ui_policy display_value="cacher le champ description de l'article quand la question vous ne trouver pas votre article dans la liste.">a9231ec507f05010290ff6fd7c1ed042</ui_policy><variable>SFA</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1088850054</payload_hash>
+        <record_name>SFA</record_name>
+        <reverted_from/>
+        <source>d480976707405010290ff6fd7c1ed0d4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-14 03:35:57</sys_created_on>
+        <sys_id>b548dac907f05010290ff6fd7c1ed0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1721140c73b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-14 03:35:57</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>bd48dac904f05010119cf8b9173e48e0</update_guid>
+        <update_guid_history>bd48dac904f05010119cf8b9173e48e0:1088850054,ed181ec9ebf0501022d78c23a896b269:1823494379</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="SFA">d98d85b7078d5010290ff6fd7c1ed03c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-03 21:28:18</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>2884ece6a29647e99b61c504af3e2ca9</sys_id>
+        <sys_metadata>49f71ec907f05010290ff6fd7c1ed064</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SFA</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_49f71ec907f05010290ff6fd7c1ed064</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_49f71ec907f05010290ff6fd7c1ed064">b548dac907f05010290ff6fd7c1ed0e1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-03 21:28:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

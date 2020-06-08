@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($rootScope, $scope, snRecordWatcher, spUtil, $location, $uibModal, cabrillo, $timeout, $window) {
+
+	var c = this;
+
+	if($scope.user.logged_in && c.data.userinfo){
+		console.log('setting user info');
+		$rootScope.userInfo = c.data.userinfo;
+	}
+
+	$scope.collapse = function() {
+		$rootScope.$emit('sp-navbar-collapse');
+	}
+
+	$scope.avatarProfile = {
+		userID: $scope.user.sys_id,
+		name: $scope.user.name,
+		initials: $window.NOW.user_initials
+	};
+
+	if ($window.NOW.user_avatar) {
+		$scope.avatarProfile.userImage = $window.NOW.user_avatar;
+	}
+
+	if (cabrillo.isNative()) {
+		if ($window.innerWidth < 767) {
+			$scope.isViewNative = true;
+		} else {
+			$scope.isViewNativeTablet = true;
+		}
+	}
+
+
+	$scope.openPopUp = function() {
+		var url = "$chat_support.do?queueID=" + $scope.data.connect_support_queue_id;
+		var popup = window.open (url, "popup", "width=900, height=600");
+	};
+
+	$scope.openLogin = function () {
+		$scope.modalInstance = $uibModal.open({
+			templateUrl: 'modalLogin',
+			scope: $scope
+		});
+	};
+
+	var xsScreenSize = isXSScreenSize();
+	$scope.showXSAvatar = isXSScreenSize();
+	$scope.showAvatar = !isXSScreenSize();
+
+	angular.element($window).on('resize', function () {
+		if(xsScreenSize !== isXSScreenSize() && (!$scope.showXSAvatar || !$scope.showAvatar)){
+			$scope.showXSAvatar = true;
+			$scope.showAvatar = true;
+		}
+	});
+
+
+	function isXSScreenSize() {
+		return $window.matchMedia('(max-width: 767px)').matches;
+	}
+
+	$rootScope.$on('sp.avatar_changed', function() {
+		$scope.userID = "";
+		$timeout(function(){
+			$scope.userID = $scope.user.sys_id;
+		});
+	});
+
+	$scope.isHomepage = function() {
+		if (!$scope.page.id)
+			return true;
+
+		if ($scope.page.id == $scope.portal.homepage_dv)
+			return true;
+
+		return false;
+	};
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@media screen and (min-width: 767px) {
+  #sidebar {
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    width: 325px;
+    z-index: 999;
+    background: #1b1a1a;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  #sidebar-menu {
+    display: block;
+  }
+
+  .navbar-header {
+    background-color: #1b1a1a; 
+    width: 100%;
+    height: 110px;
+  }
+
+  .navbar-brand {
+    max-height: 100px;
+    height: inherit;
+    margin-left: 25px;
+  }
+
+  .navbar-brand img, .navbar-brand span {
+    margin-left: 25px;
+    max-height: 55px;
+    top: 60%;
+    text-align: center;
+  }
+
+  .toggle-navbar {
+    position: absolute;
+  }
+  
+  #sidebar .components {
+    padding: 20px 0px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    max-height: 60px;
+    padding: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar-brand img, .navbar-brand span {
+    margin-left: $sp-logo-margin-x;
+    max-height: $sp-logo-max-height;
+    top: 50%;
+    padding-bottom: 5px;
+  }
+  
+  #sidebar ul li a {
+    padding: 5px 30px 5px 20px !important;
+    font-size: 1em !important;
+  }
+}
+
+.navbar-brand img, .navbar-brand span {
+  margin-right: $sp-logo-margin-x;
+  margin-top: $sp-logo-margin-y;
+  margin-bottom: $sp-logo-margin-y;
+  max-width: $sp-logo-max-width;
+  display: block;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#sidebar-toggler {
+  position: absolute;
+  padding: 5px 30px;
+}
+
+.toggle-navbar {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  z-index: 1000;
+  padding: 1px 10px;
+  background-color: #1b1a1a;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+#sidebar-toggler {
+  margin-left: 250px;
+}
+
+.toggle-navbar:hover, 
+.toggle-navbar:active, 
+.toggle-navbar:focus {
+  background-color: lighten($brand-primary,10%);
+}
+
+.navbar-avatar {
+  float: right !important;
+  margin: -4px 0 0 0;
+}
+
+.navbar-login {
+  margin-bottom: 10rem;
+}
+
+.fa-external-link {
+  float: right;
+  padding: 5px;
+}
+
+#sidebar a[data-toggle="collapse"] {
+  position: relative;
+}
+
+#sidebar .dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+#sidebar a, a:hover, a:focus {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar ul li .fa-angle-right {
+  float: right;
+  font-weight: bold;
+  padding: 5px;
+}
+
+a[aria-expanded="true"] .fa-angle-right {
+  transform: rotate(90deg);
+  transition: all 0.3s ease;
+}
+
+#sidebar ul li a {
+  padding: 10px 30px 10px 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #1b1a1a;
+  background: #fff;
+}
+
+#sidebar ul li a .header-menu-icon {
+  margin-right: 10px;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #b13939;
+}
+
+#sidebar ul li.active &gt; a, a[aria-expanded="true"] {
+  color: #fff;
+  background: #b13939;
+}
+
+#sidebar ul ul a {
+  font-size: 1em !important;
+  padding-left: 60px;
+  background: #902626;
+}
+
+.nested-list a {
+  padding-left: 75px !important;
+  background: #b13939 !important;
+}
+
+.nested-list a:hover {
+  background: #fff !important;
+}
+
+#sidebar .sidebar-header {
+  padding: 10px;
+  background: #b13939;
+  display: flex;
+}
+
+.user-pic {
+  float: left;
+  height: 55px;
+  width: 60px;
+  padding: 5px;
+  border-radius: 12px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.user-pic .navbar-avatar {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.user-info {
+  float: left;
+}
+
+.user-info &gt; span {
+  display: block;
+  font-size: 1.5em;
+}
+
+.user-info .user-role {
+  font-size: 12px;
+}
+
+.user-info .user-status {
+  font-size: 1em;
+  margin-top: 4px;
+}
+
+.user-info .user-status i {
+  font-size: 8px;
+  margin-right: 4px;
+  color: #5cb85c;
+}
+
+.offline-icon {
+    color: #979797 !important;
+}
+
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>sidenav</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  function() {
+	$('#sidebarCollapse').on('click', function () {
+		collapseSidebar();
+	});
+	
+/*	
+	// close the navbar and all other menus if a submenu item is clicked on
+	$("nav").find("li").on("click", "a.submenu-item", function () {
+		$("ul.collapse").collapse('hide');  
+		$('#sidebar-menu').collapse('hide');
+	});
+
+	// close all other menus if another menu is clicked on 
+	$("nav").find("li").on("click", "a.menu-item", function () {
+		$("ul.collapse").collapse('hide');  
+	});
+*/
+}
+
+													 
+function collapseSidebar() {
+		$(".rotate").toggleClass("down");
+		var page = $('section')[0];
+		var sidebar = $('#sidebar');
+		var footer = $('#footer-content');
+		var body = $('.body');
+		var button = $('#sidebarCollapse');
+		sidebar.toggleClass('collapse');
+		if (sidebar.hasClass('collapse')) {
+			page.classList.add('page-wide');
+			page.classList.remove('page-narrow');
+			footer.addClass('page-wide');
+			footer.removeClass('page-narrow');
+			footer.css('margin-left', '0px');
+			body.css('margin-left', '15px');
+			button.attr('title', 'Show Navigation')
+          .tooltip('fixTitle')
+          .tooltip('show');
+		} else {
+			page.classList.add('page-narrow');
+			page.classList.remove('page-wide');
+			footer.addClass('page-narrow');
+			footer.removeClass('page-wide');
+			body.css('margin-left', '0px');
+			button.attr('title', 'Hide Navigation')
+          .tooltip('fixTitle')
+          .tooltip('show');
+		}
+}
+}]]></link>
+        <name>Sidenav</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+// Defines the support queue ID that will be linked to by the Live Chat link in header
+data.connect_support_queue_id = $sp.getValue('sp_chat_queue');
+data.login_page = $sp.getValue('login_page');
+data.profileBtnMsg = gs.getMessage("User options");
+var menu = $sp.getValue("sp_rectangle_menu");
+data.menu = $sp.getWidgetFromInstance(menu);
+if (data.menu && data.menu.data) {
+	data.menu.data.replace = true;
+	// Hide login if menu already has link to login
+	data.hasLogin = false;
+	if (data.menu.data.menu.items) {
+		for(var i in data.menu.data.menu.items) {
+			var item = data.menu.data.menu.items[i];
+			if (item.type == 'page' && item.sp_page == data.login_page)
+				data.hasLogin = true;
+		}
+	}
+}
+
+data.loginWidget = $sp.getWidgetFromInstance('login-modal');
+
+
+//check for user role
+
+var role = new GlideRecord('sys_user_has_role');
+role.addQuery('user',gs.getUserID());
+role.addQuery('role','debab85bff02110053ccffffffffffb6');//Sys id of APPROVER USER role
+role.query();
+if(role.next())
+{
+	data.isApprover = true;
+}
+else
+{
+	data.isApprover = false;
+}
+
+//check for user group membership
+
+var group = new GlideRecord('sys_user_grmember');
+group.addQuery('user',gs.getUserID());
+group.addQuery('group','0a52d3dcd7011200f2d224837e6103f2');//Sys id of Store User group
+group.query();
+if(group.next())
+{
+	data.isDevUser = true;
+}
+else
+{
+	data.isDevUser = false;
+}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-15 14:19:08</sys_created_on>
+        <sys_id>dd15fd6907349010290ff6fd7c1ed0d3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Sidenav</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sp_widget_dd15fd6907349010290ff6fd7c1ed0d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-20 03:22:21</sys_updated_on>
+        <template><![CDATA[<button id="sidebarCollapse" type="button" class="btn toggle-navbar hidden-xs" data-toggle="tooltip" data-placement="bottom" title="Hide Navigation"> <i class="fa fa-arrow-circle-o-left text-white rotate"></i> </button>
+
+<div id="sidebar">
+  <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}" role="navigation">
+    <div ng-show="::!isViewNative" class="navbar-header">
+      <a class="navbar-brand" ng-if="::!portal.logo" href="?id="><span ng-bind="portal.title"></span></a>
+      <a class="navbar-brand" ng-if="::portal.logo" ng-href="?id=" ng-click="collapse()" aria-label="${Go to homepage}">
+        <img ng-src="" title="ServiceNow" role="presentation" alt="${Portal Logo}" />
+      </a>
+
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-menu">
+        <span class="sr-only">${Toggle navigation}</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+
+    <div class="sidebar-header hidden-xs">
+      <div class="user-pic">
+        <span class="navbar-avatar"><sn-avatar class="avatar-large" primary="avatarProfile" /></span>
+      </div>
+      <div class="user-info">
+        <span class="user-name"> 
+          <strong></strong>
+          <a ng-if="user.logged_in" href="" class="m-l-xs" data-toggle="tooltip" data-placement="top" title="Logout"><span class="fa fa-sign-out"></span></a>
+        </span>
+        <span class="user-status">
+          <i ng-class="{'offline-icon': !user.logged_in}"class="fa fa-circle"></i>
+          <span ng-if="user.logged_in">Online</span>
+          <span ng-if="!user.logged_in">Offline</span>
+        </span>
+      </div>
+    </div>
+
+    <div sp-navbar-toggle="" class="collapse" id="sidebar-menu">
+      <ul class="components list-unstyled" role="menubar">
+        <li>
+          <a class="submenu-item" href="?id="><i class="fa fa-home header-menu-icon"></i>Home</a>
+        </li>
+        <li>
+          <a ng-if="user.logged_in" href="#dashboards" data-toggle="collapse" aria-expanded="false" class="menu-item dropdown-toggle"><i class="fa fa-newspaper-o header-menu-icon"></i>Dashboards<i class="fa fa-angle-right"></i></a>
+          <ul class="collapse list-unstyled" id="dashboards">
+            <li>
+              <a class="submenu-item" href="https://www.google.com" target="_blank">Dashboard 1 <i class="fa fa-external-link"></i></a>
+            </li>
+            <li>
+              <a class="submenu-item" href="https://www.yahoo.com" target="_blank">Dashboard 2 <i class="fa fa-external-link"></i></a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li>
+          <a href="#itservices" data-toggle="collapse" aria-expanded="false" class="menu-item dropdown-toggle"><i class="fa fa-desktop header-menu-icon"></i>IT Services<i class="fa fa-angle-right"></i></a>
+          <ul class="collapse list-unstyled" id="itservices">
+            <li>
+              <a class="submenu-item" ng-show="user.logged_in" href="?id=itsm_my_incidents">My Incidents</a>
+            </li>
+
+            <li>
+              <a class="submenu-item" ng-if="user.logged_in" href="?id=itsm_my_requests">My Requested Items</a>
+            </li>
+
+            <li>
+              <a class="submenu-item" ng-show="data.isApprover" href="?id=approvals">My Approvals</a>
+            </li>
+
+            <li>
+              <a class="submenu-item" ng-if="user.logged_in" href="?id=sc_category">Service Catalog</a>
+            </li>
+
+            <li>
+              <a class="submenu-item" ng-if="user.logged_in" href="?id=kb_view2">Knowledge Bases</a>
+            </li>
+
+            <li>
+              <a class="submenu-item" ng-show="data.isDevUser" href="?id=clocks">Cool Clocks</a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+      <ul ng-if="(!user.logged_in && page.id != portal.login_page_dv && !data.hasLogin)" class="nav list-unstyled">
+        <li class="list-unstyled active" role="presentation"><a href ng-click="::openLogin()">${Login}</a></li>
+      </ul>
+      <ul ng-if="user.logged_in" class="nav list-unstyled">
+        <li ng-if="showXSAvatar" class="visible-xs-block active" role="presentation"><a role="menuitem" ng-href="?id=user_profile&sys_id=" ng-click="collapse()">
+          <span class="navbar-avatar"><sn-avatar class="avatar-small-medium" primary="avatarProfile" /></span></a>
+        </li>
+        <li ng-if="::!(isViewNative || isViewNativeTablet)" class="visible-xs-block" role="presentation"><a role="menuitem" ng-href="" ng-click="collapse()">${Logout}</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>]]></template>
+    </sp_widget>
+</record_update>
