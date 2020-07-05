@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.CartAjaxClientUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>This script will help to populate the "requested for" field using a variable comming from the Question fields</description>
+        <name>CartAjaxClientUtils</name>
+        <script><![CDATA[var CartAjaxClientUtils = Class.create();
+
+CartAjaxClientUtils.prototype =   Object.extendsObject(AbstractAjaxProcessor, {  
+getRequestedForValue : function() {  
+var cart_item_id;  
+var cart_id =   this.getParameter("sysparm_cart_id");  
+var gr =   new GlideRecord("sc_cart_item");  
+gr.addQuery("cart.sys_id", cart_id );  
+gr.query();  
+ 
+while(gr.next() ) {  
+cart_item_id = gr.item;  
+}  
+var itemGR =   new GlideRecord("sc_item_option"); 	
+itemGR.addQuery("Question", "Requested For");  
+// test 	Bénéficiaire	
+//itemGR.addQuery("Question", "Bénéficiaire");  
+itemGR.addQuery("cart_item", cart_item_id);  
+itemGR.query();  
+while(itemGR.next()) {  
+return itemGR.value;  
+}  
+},  
+type: "CartAjaxClientUtils"  
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-24 20:55:10</sys_created_on>
+        <sys_id>9e9ec1ee07ad5010290ff6fd7c1ed0da</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CartAjaxClientUtils</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_9e9ec1ee07ad5010290ff6fd7c1ed0da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-24 22:37:44</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="PC bureau dell">000e202f07301010290ff6fd7c1ed069</sc_cat_item>
-        <sc_category display_value="SFA IT: ordinateurs">40aa851507b85010290ff6fd7c1ed0d6</sc_category>
+        <sc_category display_value="SFA IT: Matériel Informatique">40aa851507b85010290ff6fd7c1ed0d6</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-21 14:16:25</sys_created_on>

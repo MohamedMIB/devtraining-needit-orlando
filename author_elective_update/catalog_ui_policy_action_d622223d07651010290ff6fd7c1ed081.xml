@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Demande spécifique">c682e917070d1010290ff6fd7c1ed0f3</catalog_item>
+        <catalog_variable>IO:ec321a7d07251010290ff6fd7c1ed00c</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>90</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-22 19:02:01</sys_created_on>
+        <sys_id>d622223d07651010290ff6fd7c1ed081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>client</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_d622223d07651010290ff6fd7c1ed081</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-22 19:02:01</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide checkbox and client  fields  when 'type de la demande' is not ad-hoc">dbb392b107651010290ff6fd7c1ed024</ui_policy>
+        <variable>client</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>6cf84779db4f88180ae3ac44d49619f5</instance_id>
+        <instance_name>dev101366</instance_name>
+        <name>catalog_ui_policy_action_d622223d07651010290ff6fd7c1ed081</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Demande spécifique">c682e917070d1010290ff6fd7c1ed0f3</catalog_item><catalog_variable>IO:ec321a7d07251010290ff6fd7c1ed00c</catalog_variable><cleared>true</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>90</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-06-22 19:02:01</sys_created_on><sys_id>d622223d07651010290ff6fd7c1ed081</sys_id><sys_mod_count>0</sys_mod_count><sys_name>client</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>catalog_ui_policy_action_d622223d07651010290ff6fd7c1ed081</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-06-22 19:02:01</sys_updated_on><table/><ui_policy display_value="Hide checkbox and client  fields  when 'type de la demande' is not ad-hoc">dbb392b107651010290ff6fd7c1ed024</ui_policy><variable>client</variable><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-75303851</payload_hash>
+        <record_name>client</record_name>
+        <reverted_from/>
+        <source>d480976707405010290ff6fd7c1ed0d4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-22 19:02:01</sys_created_on>
+        <sys_id>a332223d07651010290ff6fd7c1ed011</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172dd68a1990000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-22 19:02:01</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>eb32223dcd651010372902d12c010a10</update_guid>
+        <update_guid_history>eb32223dcd651010372902d12c010a10:-75303851</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="client">b692663d07651010290ff6fd7c1ed03f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-22 19:03:36</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>17d45ac5e37e444fb16dd309b10e01a9</sys_id>
+        <sys_metadata>d622223d07651010290ff6fd7c1ed081</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>client</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_d622223d07651010290ff6fd7c1ed081</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_d622223d07651010290ff6fd7c1ed081">a332223d07651010290ff6fd7c1ed011</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-22 19:03:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

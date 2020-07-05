@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Change the "requested for" field using the initial tab question field "requested for" in order guid.</description>
+        <field>contact_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>ChangeRequestedFor</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+        var cart_id = $('sysparm_item_guid').value;
+     var cartAjaxUtil = new GlideAjax('CartAjaxClientUtils');
+     cartAjaxUtil.addParam('sysparm_name', 'getRequestedForValue');
+     cartAjaxUtil.addParam('sysparm_cart_id', cart_id);
+     cartAjaxUtil.getXML(fillRequestedFor);
+
+
+    function fillRequestedFor(response) {
+       var answer = response.responseXML.documentElement.getAttribute("answer");
+       $('sc_cart.requested_for').value = answer;
+
+   }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-24 21:20:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f93d1a207ed5010290ff6fd7c1ed099</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ChangeRequestedFor</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_4f93d1a207ed5010290ff6fd7c1ed099</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-24 21:20:01</sys_updated_on>
+        <table>sc_cart</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

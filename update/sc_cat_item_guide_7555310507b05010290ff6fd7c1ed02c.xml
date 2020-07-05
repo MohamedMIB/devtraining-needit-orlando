@@ -3,7 +3,7 @@
         <active>true</active>
         <availability>on_desktop</availability>
         <billable>false</billable>
-        <cascade>false</cascade>
+        <cascade>true</cascade>
         <category display_value="Demmande collaborateur">8b2d779a07201010290ff6fd7c1ed0d2</category>
         <cost>0</cost>
         <custom_cart/>
@@ -46,7 +46,7 @@
         <order>0</order>
         <order_to_cart>false</order_to_cart>
         <ordered_item_link/>
-        <picture/>
+        <picture>be44b1aa075d1010290ff6fd7c1ed0ee</picture>
         <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_guide_view.do?v=1&amp;sysparm_initial=true&amp;sysparm_guide=7555310507b05010290ff6fd7c1ed02c&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <recurring_frequency/>
@@ -64,14 +64,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-14 01:10:09</sys_created_on>
         <sys_id>7555310507b05010290ff6fd7c1ed02c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Demande collaborateur</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sc_cat_item_guide_7555310507b05010290ff6fd7c1ed02c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-14 02:49:23</sys_updated_on>
+        <sys_updated_on>2020-06-12 13:21:01</sys_updated_on>
         <template/>
         <two_step>false</two_step>
         <type>item</type>
@@ -120,4 +120,43 @@
         <table>sc_cat_item_guide</table>
         <type>calculated</type>
     </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>picture</file_name>
+        <hash>96dbfc30df05ffd602a9a6c41686454f62677e7c4e2d10f8836af07c75ed73ec</hash>
+        <image_height>100</image_height>
+        <image_width>100</image_width>
+        <size_bytes>1896</size_bytes>
+        <size_compressed>1919</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-12 13:21:00</sys_created_on>
+        <sys_id>be44b1aa075d1010290ff6fd7c1ed0ee</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-12 13:21:01</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_guide</table_name>
+        <table_sys_id>7555310507b05010290ff6fd7c1ed02c</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="be44b1aa075d1010290ff6fd7c1ed0ee">be44b1aa075d1010290ff6fd7c1ed0ee</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-12 13:21:00</sys_created_on>
+        <sys_id>fe44b1aa075d1010290ff6fd7c1ed0ee</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2548</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="be44b1aa075d1010290ff6fd7c1ed0ee">be44b1aa075d1010290ff6fd7c1ed0ee</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-12 13:21:00</sys_created_on>
+        <sys_id>7244b1aa075d1010290ff6fd7c1ed0ef</sys_id>
+    </sys_attachment_doc>
 </record_update>
