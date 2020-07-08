@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_guide_items">
+    <sc_cat_item_guide_items action="DELETE">
+        <condition>IO:08d7b92a079d1010290ff6fd7c1ed0e4=22fac28907b05010290ff6fd7c1ed0d5^IO:fb78712a079d1010290ff6fd7c1ed028=40aa851507b85010290ff6fd7c1ed0d6^EQ</condition>
+        <guide display_value="Demande Onboarding">32c5cd9e073d1010290ff6fd7c1ed094</guide>
+        <ignore_mandatory_eval>false</ignore_mandatory_eval>
+        <item display_value="Tablette Google Nexus 7">49406e2e07dd1010290ff6fd7c1ed0f8</item>
+        <order>110</order>
+        <quantity>1</quantity>
+        <requested_by/>
+        <requested_for/>
+        <show_quantity>false</show_quantity>
+        <sys_class_name>sc_cat_item_guide_items</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-06 13:12:56</sys_created_on>
+        <sys_id>3698119a077d1010290ff6fd7c1ed074</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>49406e2e07dd1010290ff6fd7c1ed0f8</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sc_cat_item_guide_items_3698119a077d1010290ff6fd7c1ed074</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-06 13:12:56</sys_updated_on>
+        <use_sc_layout>true</use_sc_layout>
+    </sc_cat_item_guide_items>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>6cf84779db4f88180ae3ac44d49619f5</instance_id>
+        <instance_name>dev101366</instance_name>
+        <name>sc_cat_item_guide_items_3698119a077d1010290ff6fd7c1ed074</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_guide_items"><sc_cat_item_guide_items action="INSERT_OR_UPDATE"><condition>IO:08d7b92a079d1010290ff6fd7c1ed0e4=22fac28907b05010290ff6fd7c1ed0d5^IO:fb78712a079d1010290ff6fd7c1ed028=40aa851507b85010290ff6fd7c1ed0d6^EQ</condition><guide display_value="Demande Onboarding">32c5cd9e073d1010290ff6fd7c1ed094</guide><ignore_mandatory_eval>false</ignore_mandatory_eval><item display_value="Tablette Google Nexus 7">49406e2e07dd1010290ff6fd7c1ed0f8</item><order>110</order><quantity>1</quantity><requested_by/><requested_for/><show_quantity>false</show_quantity><sys_class_name>sc_cat_item_guide_items</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-07-06 13:12:56</sys_created_on><sys_id>3698119a077d1010290ff6fd7c1ed074</sys_id><sys_mod_count>0</sys_mod_count><sys_name>49406e2e07dd1010290ff6fd7c1ed0f8</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sc_cat_item_guide_items_3698119a077d1010290ff6fd7c1ed074</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-07-06 13:12:56</sys_updated_on><use_sc_layout>true</use_sc_layout></sc_cat_item_guide_items></record_update>]]></payload>
+        <payload_hash>-94057738</payload_hash>
+        <record_name>49406e2e07dd1010290ff6fd7c1ed0f8</record_name>
+        <reverted_from/>
+        <source>d480976707405010290ff6fd7c1ed0d4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-06 13:12:56</sys_created_on>
+        <sys_id>3a98119a077d1010290ff6fd7c1ed076</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>173244212df0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-06 13:12:56</sys_updated_on>
+        <type>Rule</type>
+        <update_guid>7298119ad57d1010814dc44f485d7676</update_guid>
+        <update_guid_history>7298119ad57d1010814dc44f485d7676:-94057738</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Tablette Google Nexus 7">e6b8199a077d1010290ff6fd7c1ed0fc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-06 13:13:28</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_guide_items">sc_cat_item_guide_items</sys_db_object>
+        <sys_id>3ee18cd0ee6f4d2ca8c7d5cdbac04b90</sys_id>
+        <sys_metadata>3698119a077d1010290ff6fd7c1ed074</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>49406e2e07dd1010290ff6fd7c1ed0f8</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sc_cat_item_guide_items_3698119a077d1010290ff6fd7c1ed074</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_guide_items_3698119a077d1010290ff6fd7c1ed074">3a98119a077d1010290ff6fd7c1ed076</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-06 13:13:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

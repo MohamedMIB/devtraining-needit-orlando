@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
     <sc_cat_item action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <availability>on_desktop</availability>
         <billable>false</billable>
         <category display_value="Demande exceptionnelle">a752406e07201010290ff6fd7c1ed03e</category>
@@ -55,21 +55,21 @@
         <sc_catalogs>cf7a6d0107bc1010290ff6fd7c1ed058</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
-        <short_description/>
+        <short_description>Une demande faite par les menmbre de DG en charge</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-26 12:14:25</sys_created_on>
         <sys_id>79e0828d07011010290ff6fd7c1ed0b9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Demande exceptionnelle</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sc_cat_item_79e0828d07011010290ff6fd7c1ed0b9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-26 12:14:44</sys_updated_on>
+        <sys_updated_on>2020-07-06 09:17:05</sys_updated_on>
         <template/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
