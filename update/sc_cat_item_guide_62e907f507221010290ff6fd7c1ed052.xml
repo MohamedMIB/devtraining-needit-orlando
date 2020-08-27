@@ -63,16 +63,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-08-11 15:00:55</sys_created_on>
         <sys_id>62e907f507221010290ff6fd7c1ed052</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Demande de chiffrage</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sc_cat_item_guide_62e907f507221010290ff6fd7c1ed052</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-11 15:04:25</sys_updated_on>
+        <sys_updated_on>2020-08-14 12:35:39</sys_updated_on>
         <template/>
-        <two_step>false</two_step>
+        <two_step>true</two_step>
         <type>item</type>
         <u_the_workflow/>
         <use_sc_layout>true</use_sc_layout>
